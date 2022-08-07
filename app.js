@@ -5,6 +5,8 @@ const cityName = document.getElementById('city');
 const country = document.getElementById('country');
 const description = document.getElementById('desc');
 const button = document.getElementById('button');
+const icons = document.getElementsByClassName('png');
+const array = new Array("Thunderstorm","Drizzle","Rain","Snow","Clear","Clouds")
 console.log(city['value'])
 
 city.addEventListener("keypress", event=>{
@@ -29,8 +31,15 @@ button.addEventListener('click', () => {
                 let cityValue = city['value'];
                 let countryValue = data['sys']['country']
                 let descValue = data['weather'][0]['description'];
-
-                
+                console.log(data['weather'][0]['main'])
+                for(i = 0; i <= 5; i++){
+                    if (array[i] === data['weather'][0]['main']){
+                        icons[i].classList.remove('hidden');
+                    }
+                    else{
+                        icons[i].classList.add('hidden');
+                    }
+                }
                 
                 country.innerHTML=("<p>"+countryValue+"</p>")
                 temp.innerHTML=("<p>"+tempValue+"</p>");

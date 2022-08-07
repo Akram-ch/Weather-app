@@ -45,7 +45,7 @@ body{
 }
 
 .top:focus{
-    border: none;
+    border: 0px;
 }
 
 .container{
@@ -106,8 +106,8 @@ body{
 }
 
 .icon img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .description{
