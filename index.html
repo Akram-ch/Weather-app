@@ -12,23 +12,27 @@
     <title>Weather app</title>
 </head>
 <body>
-
-    <h1 class="top-text">How's the weather today in <span class="city-top" id="london">London</span>?</h1>
+    <div class="top">
+        <h1 class="top-text">How's the weather today in </h1> 
+        <input type="text" class="input" id="city-input">
+        <input type="submit" name="" id="button" class="hidden">
+        <h1 class="top-text">?</h1>
+    </div>
     <div class="container">
         <div class="white-box">
             <div class="loc">
-                <p class="city">London</p>
-                <p class="country">UK</p>
+                <p class="city" id="city">London</p>
+                <p class="country" id="country">UK</p>
             </div>
             <div class="temp">
-                <p class="value">9</p>
+                <p class="value" id="temp-val">9</p>
                 <p class="celcius">°C</p>
             </div>
             <div class="icon">
                 <img src="images/icons8-partly-cloudy-day-50.png" alt="cloudy">
             </div>
             <div class="description">
-                <p>Partly cloudy</p>
+                <p id="desc">Partly cloudy</p>
             </div>
         </div>
 

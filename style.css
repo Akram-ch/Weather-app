@@ -15,10 +15,36 @@ body{
     background-attachment: fixed;
 }
 
+.hidden{
+    display: none;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+}
+
 .top-text{
     color: whitesmoke;
     text-align: center;
     margin-top: 3.5rem;
+}
+
+.top .input{
+    display: flex;
+    width: 250px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-family:'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 3.45rem;
+    margin-left: 15px;
+}
+
+.top:focus{
+
 }
 
 .container{
